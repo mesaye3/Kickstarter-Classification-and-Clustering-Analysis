@@ -12,7 +12,7 @@ Kickstarter Classification model
 Classification model is suitable when the target variable is categorical data (in this case state is
 success or failure). The flowchart to go through for a successful classification model.
 
-Data preprocessing
+### Data preprocessing
 
 Data preprocessing needs to be performed on the Kickstarter dataset to reduce poor machine
 learning model. The state column was filtered into successful and failed, because the analysis was
@@ -23,7 +23,7 @@ null values and it was observed category and launch_to_state_change_days contain
 Then, using dropna function category was dropped. Lastly, check if there were any duplicates in
 the dataset.
 
-Exploratory Data Analysis (EDA)
+### Exploratory Data Analysis (EDA)
 
 EDA provides an opportunity to visualize and understand the dataset more effectively. The column
 goal contains amount in local currency, and this was converted to USD currency for consistency.
@@ -32,7 +32,7 @@ launched right way. Number of campaigns launched per year was checked and the da
 consistent increase in projects launched and month of November and July experience higher
 project launched. USA has highest projects contribution by country.
 
-Feature Engineering
+### Feature Engineering
 
 The target variable is column state, categorical variable using NumPy where function it was
 converted into numerical value. Then, success rate was checked by country to see where most
@@ -42,7 +42,7 @@ which category has the top success rate; hardware scored the highest. Using, get
 country and category data converted into numerical values. The final engineered dataset was ready
 to be placed into machine learning model.
 
-Machine Learning Model
+### Machine Learning Model
 
 Logistic regression was used to build the model. The process was presented in the code, the goal
 is to have deep understanding on how well the model reacts with different predictors and examine
@@ -54,7 +54,7 @@ regression model and with this analysis 48% F1 score was achieved. Additional an
 using random forest. define x and y variables, split train/test set, model build and predict. Random
 forest produced 70 % accuracy and 52% F1 score.
 
-Classification model for Business Context
+### Classification model for Business Context
 
 Three groups (project creator, Kickstarter platform, backers) will benefit from this analysis. The
 data shows close to 67% of the projects fail, likewise, this model provides insight into which
@@ -62,7 +62,7 @@ category to choose (hardware, gadgets) shorter duration for prep/ campaign, and 
 help newcomers on the platform organize their project plan and backers also have better
 understanding of which project to back based on this analysis.
 
-Clustering Model
+### Clustering Model
 
 Principal analysis component (PCA) was performed to determine number of components needed
 to explain variance with cut-off threshold of 95%, and 23 number of components satisfies the
@@ -77,7 +77,7 @@ there was also few high pledged amounts, while the number of backers was very lo
 selective investors who wants specific projects. Cluster 5 showed the opposite of cluster 1, projects
 with highly pledged amount related to higher backer count.
 
-Clustering model for Business Context
+### Clustering model for Business Context
 
 Clustering pattern presented the relationship between backers and pledged amount, with this model
 Kickstarter platform has better understanding of the investors behaviour and how money is
