@@ -1,4 +1,4 @@
-# mesaye3-Kickstarter-Classification-and-Clustering-Analysis
+# Kickstarter-Classification-and-Clustering-Analysis
 
 ## Introduction
 Kickstarter is crowdfunding platform; its mission is to help people bring their projects to life. It is
